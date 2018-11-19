@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue';
 import Sport from './views/Sport.vue';
+import Counter from './views/Counter.vue';
 import Tournaments from './views/Tournaments.vue';
 
 Vue.use(Router)
@@ -12,6 +13,11 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/counter',
+      name: 'counter',
+      component: Counter
     },
     {
       path: '/sport/:name',

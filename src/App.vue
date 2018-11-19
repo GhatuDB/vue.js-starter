@@ -3,7 +3,8 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/sport/cricket">Cricket</router-link> | 
-      <router-link to="/sport/football">Football</router-link>
+      <router-link to="/sport/football">Football</router-link> | 
+      <router-link to="/counter">Counter</router-link> |
     </div>
     <router-view/>
   </div>
@@ -11,7 +12,7 @@
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
