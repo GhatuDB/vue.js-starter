@@ -1,17 +1,17 @@
 <template>
-  <div class="sport">
-    <Sport/>
+  <div class="contact">
+    <Contact/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Sport from '@/components/Sport.vue'
+import Contact from '@/components/Contact.vue'
 
 export default {
-  name: 'sport',
+  name: 'contact',
   components: {
-    Sport
+    Contact
   }
 }
 </script>

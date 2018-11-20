@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue';
-import Sport from './views/Sport.vue';
-import Tournaments from './views/Tournaments.vue';
+import Contacts from './views/Contacts.vue';
+import Contact from './views/Contact.vue';
+import AddContact from './views/AddContact.vue';
 
 Vue.use(Router)
 
@@ -10,21 +10,15 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      component: Contacts
     },
     {
-      path: '/sport/:name',
-      name: 'Sport',
-      component: Sport,
-      children: [
-         {
-           path: 'tournaments',
-           name: 'Tournaments',
-           component: Tournaments
-         }
-
-       ]
+      path: '/contacts/:index',
+      component: Contact
+    },
+    {
+      path: '/addcontact',
+      component: AddContact
     }
   ]
 })
